@@ -45,13 +45,13 @@
             // 
             // btnPVPC1
             // 
-            this.btnPVPC1.Enabled = false;
             this.btnPVPC1.Location = new System.Drawing.Point(282, 235);
             this.btnPVPC1.Name = "btnPVPC1";
             this.btnPVPC1.Size = new System.Drawing.Size(265, 52);
             this.btnPVPC1.TabIndex = 1;
             this.btnPVPC1.Text = "Play v Computer 1 ";
             this.btnPVPC1.UseVisualStyleBackColor = true;
+            this.btnPVPC1.Click += new System.EventHandler(this.btnPVPC1_Click);
             // 
             // btnPVPC2
             // 
@@ -67,6 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Salmon;
             this.ClientSize = new System.Drawing.Size(861, 531);
             this.Controls.Add(this.btnPVPC2);
             this.Controls.Add(this.btnPVPC1);
