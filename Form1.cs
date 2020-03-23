@@ -161,10 +161,10 @@ namespace TicTacToe
         /// </summary>
         /// <param The virtual table ="Board"></param>
         /// <returns></returns>
-        private bool  CheckWin(char[,] Board, char player , TableLayoutPanelCellPosition pos )
+        private bool CheckWin(char[,] Board, char player, TableLayoutPanelCellPosition pos)
         {
 
-            bool isWin = false;
+
 
             //only ckeck the column , row or diagonal
             int x_Coord = pos.Row;
@@ -173,58 +173,71 @@ namespace TicTacToe
             bool isWinDiag = true;
             bool isWinRow = true;
             bool isWinColumn = true;
-            bool isWinANTI = true; 
+            bool isWinANTI = true;
 
             //check the row 
-            for (int i  = 0; i<3;i++)
-            { 
-                if(x_Coord == y_Coord)
-                {
-                    if (Board[i, i] != player) isWinDiag = false;
-                }
-               if (Board[x_Coord, i] != player) { isWinRow = false; break; }
- 
-            }
-           
-            //check win in column 
-            for(int i = 0; i<3;i++)
+            for (int i = 0; i < 3; i++)
             {
-                if(Board[i, y_Coord] != player) { isWinColumn = false; break; }
+                if (Board[x_Coord, i] != player) { isWinRow = false; break; }
+            }
+
+            //check win in column 
+            for (int i = 0; i < 3; i++)
+            {
+                if (Board[i, y_Coord] != player) { isWinColumn = false; break; }
             }
 
             //check win in anti-diagonal 
-            for(int i = 0; i < 3; i++)
+            if (x_Coord + y_Coord + 1 == 3)
             {
-                int j = 2 - i; 
-                if(Board[i,j] != player)
+                for (int i = 0; i < 3; i++)
                 {
-                    isWinANTI = false;
-                    break;
+                    int j = 2 - i;
+                    if (Board[i, j] != player)
+                    {
+                        isWinANTI = false;
+                        break;
+                    }
+
+                }
+            }
+             if (x_Coord == y_Coord)
+            {
+                    
+                for (int i = 0; i < 3; i++)
+                {
+                    if(Board[i,i] != player)
+                    {
+                        isWinDiag = false;
+                        break;
+                    }
                 }
 
             }
 
-            if (x_Coord == y_Coord && isWinDiag == true)
-            {
-                Console.WriteLine("win by diag"); return true;
-            }
-            else if (x_Coord + y_Coord + 1 == 3 && isWinANTI == true)
-            {
-                Console.WriteLine("win by antidiag"); return true;
-            }
-            else if (isWinColumn == true)
-            {
-                Console.WriteLine("win by col"); return true;
-            }
-            else if (isWinRow == true)
-            {
-                Console.WriteLine("row"); return true;
-            }
+            if (x_Coord == y_Coord && isWinDiag == true)  return true;
+           
+              
+           
+            else if (x_Coord + y_Coord + 1 == 3 && isWinANTI == true) return true;
+           
+                
+            
+            else if (isWinColumn == true)    return true;
+           
+             
+            
+           else if (isWinRow == true)     return true;
+            
+           
+
+
+            
             else return false; 
            
-            return false;
+         
 
-            ;
+            
         }
       
         
