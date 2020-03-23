@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblRestart = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,16 +48,6 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.Click_Board);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 303);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // lblRestart
             // 
             this.lblRestart.AutoSize = true;
@@ -75,7 +64,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 564);
             this.Controls.Add(this.lblRestart);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Tic Tac Toe ";
@@ -88,7 +76,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblRestart;
     }
 }
