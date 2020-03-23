@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -113,7 +113,19 @@ namespace TicTacToe
                             RestartGame(Board);
                         }
                     }
-                  else  if (CheckTie(Board))
+                    else if (CheckWin(Board, 'O', pos))
+                    {
+
+                        MessageBox.Show("O wins ! ", "WIN", MessageBoxButtons.OK);
+                        DialogResult dg = MessageBox.Show("Do you wish to restart ? ", "Restart", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dg == DialogResult.Yes)
+                        {
+                            RestartGame(Board);
+                        }
+
+
+                    }
+                  else   if     (CheckTie(Board))
                     {
                         MessageBox.Show("Game is tie ", "Tie", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         DialogResult dg = MessageBox.Show("Do you wish to restart ? ", "Restart", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -287,6 +299,7 @@ namespace TicTacToe
             RestartGame(Board);
             
         }
+
     }
 
 
