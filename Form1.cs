@@ -137,6 +137,32 @@ namespace TicTacToe
                     //every time player click 
               
                 } 
+                else if(!PlayerTurn)
+                {
+                    //player v player 
+
+                    Board[pos.Row, pos.Column] = 'O';
+
+                    button.Text = "O";
+                    button.Enabled = false;
+                    PlayerTurn = true;
+                    //check if the move is win 
+
+                    if (CheckWin(Board, 'O', pos))
+                    {
+
+                        MessageBox.Show("O wins ! ", "WIN", MessageBoxButtons.OK);
+                        DialogResult dg = MessageBox.Show("Do you wish to restart ? ", "Restart", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (dg == DialogResult.Yes)
+                        {
+                            RestartGame(Board);
+                        }
+
+
+                    }
+
+
+                }
                
               
 
