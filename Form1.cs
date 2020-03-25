@@ -74,7 +74,7 @@ namespace TicTacToe
                 //it is player;s turn 
                 if (PlayerTurn)
                 {
-                    
+                   
 
                     Board[pos.Row, pos.Column] = 'X';
 
@@ -202,7 +202,7 @@ namespace TicTacToe
 
 
         /// <summary>
-        /// A method that checks the state of the game 1 - p1 wins , 2 -p2 wins  , 3 -Tie 
+        /// A method that checks the s  tate of the game 1 - p1 wins , 2 -p2 wins  , 3 -Tie 
         /// </summary>
         /// <param The virtual table ="Board"></param>
         /// <returns></returns>

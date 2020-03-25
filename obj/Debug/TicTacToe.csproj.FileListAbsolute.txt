@@ -7,3 +7,4 @@ D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cach
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.main_menu.resources
