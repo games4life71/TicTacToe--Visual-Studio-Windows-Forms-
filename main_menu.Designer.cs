@@ -55,13 +55,13 @@
             // 
             // btnPVPC2
             // 
-            this.btnPVPC2.Enabled = false;
             this.btnPVPC2.Location = new System.Drawing.Point(282, 308);
             this.btnPVPC2.Name = "btnPVPC2";
             this.btnPVPC2.Size = new System.Drawing.Size(265, 52);
             this.btnPVPC2.TabIndex = 2;
             this.btnPVPC2.Text = "Play v Computer2";
             this.btnPVPC2.UseVisualStyleBackColor = true;
+            this.btnPVPC2.Click += new System.EventHandler(this.btnPVPC2_Click);
             // 
             // main_menu
             // 
@@ -73,7 +73,7 @@
             this.Controls.Add(this.btnPVPC1);
             this.Controls.Add(this.btnPVP);
             this.Name = "main_menu";
-            this.Text = "main_menu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }

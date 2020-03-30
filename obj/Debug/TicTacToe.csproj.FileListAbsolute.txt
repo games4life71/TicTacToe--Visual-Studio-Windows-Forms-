@@ -8,3 +8,7 @@ D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
 D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.main_menu.resources
+D:\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.manifest
+D:\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.application
+D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe.manifest
+D:\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.application
